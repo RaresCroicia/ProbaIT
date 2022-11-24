@@ -1,0 +1,14 @@
+{
+  "name": "probait",
+  "version": "1.0.0",
+  "description": "Proba pe la IT - cica facem site de meme-uri sa il batem pe Codrut la facut meme-uri si incepe sa fure din ale noastre",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rares Croicia",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
