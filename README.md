@@ -73,5 +73,7 @@ npm run backend
 ### FRONTEND
 
 ### BACKEND
+- Cand folosesc variabilele din .env pentru a ma conecta la server, nu pot face operatii for some reason, i will look into it
 
 ## Funny moments (Orice cod bun e nevoit sa aiba astfel de momente)
+- Eu incercand sa imi dau seama de ce nu merge POST si dupa 20 de minute sa vad ca am scris PATCH in loc de POST in router. Am avut un moment de brainfuck masiv
