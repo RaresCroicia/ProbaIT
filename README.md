@@ -32,7 +32,10 @@ Pas #2: Se instaleaza pachetele ```nodejs``` si ```npm``` (depinde de sistemul d
 Pas #3: Se initiaza proiectul descarcand pachetele necesare
 
 ```bash
+# O sa presupun ca suntem in directorul ProbaIT
 npm install
+cd frontend && npm install # Asteptam
+cd ../backend && npm install # Asteptam 
 ```
 
 Pas #4: Se porneste proiectul
