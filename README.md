@@ -13,7 +13,7 @@
 ### BACKEND
 
 - [X] DB Schema
-- [ ] CRUD
+- [X] CRUD Memes
 - [ ] Register/Login
 - [ ] Input Validation
 - [ ] Protected endpoints
