@@ -12,7 +12,7 @@
 
 ### BACKEND
 
-- [ ] DB Schema
+- [X] DB Schema
 - [ ] CRUD
 - [ ] Register/Login
 - [ ] Input Validation
