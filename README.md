@@ -14,7 +14,7 @@
 
 - [X] DB Schema
 - [X] CRUD Memes
-- [ ] Register/Login
+- [X] Register/Login
 - [ ] Input Validation
 - [ ] Protected endpoints
 - [ ] Bonus: File Upload
@@ -77,3 +77,4 @@ npm run backend
 
 ## Funny moments (Orice cod bun e nevoit sa aiba astfel de momente)
 - Eu incercand sa imi dau seama de ce nu merge POST si dupa 20 de minute sa vad ca am scris PATCH in loc de POST in router. Am avut un moment de brainfuck masiv
+- Cand incerci sa folosesti o variabila din .env, asigura-te ca ai si pus-o acolo (mama ei)

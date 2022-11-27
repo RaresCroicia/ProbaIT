@@ -29,7 +29,7 @@ const getMeme = async (req, res) => {
         const meme = await Meme.findOne({_id: id});
         res.status(200).send(meme);
     } catch (err) { 
-        res.status(404).send("Can't find the meme with that ID");
+        res.status(404).send({message: "Can't find the meme with that ID."});
     }
 }
 

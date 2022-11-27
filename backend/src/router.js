@@ -2,6 +2,7 @@ const express = require('express')
 const router = express.Router();
 
 const memesRouter = require('./routes/memes.router');
+const usersRouter = require('./routes/users.router');
 
 // Sa verific basic
 router.get('/', (req, res) => {
@@ -14,5 +15,6 @@ router.get('/', (req, res) => {
 })
 
 router.use('/memes', memesRouter);
+router.use('/users', usersRouter);
 
-module.exports = router
+module.exports = router;
