@@ -16,7 +16,7 @@
 - [X] CRUD Memes
 - [X] Register/Login
 - [X] Input Validation
-- [ ] Protected endpoints
+- [X] Protected endpoints
 - [ ] Bonus: File Upload
 
 ## Setup and Run
@@ -74,7 +74,9 @@ npm run backend
 
 ### BACKEND
 - Cand folosesc variabilele din .env pentru a ma conecta la server, nu pot face operatii for some reason, i will look into it
+- [FIX] nu folosi nume clasice din variabilele linux (USERNAME), fa-le cat mai originale si unice (adauga un prefix)
 
 ## Funny moments (Orice cod bun e nevoit sa aiba astfel de momente)
 - Eu incercand sa imi dau seama de ce nu merge POST si dupa 20 de minute sa vad ca am scris PATCH in loc de POST in router. Am avut un moment de brainfuck masiv
 - Cand incerci sa folosesti o variabila din .env, asigura-te ca ai si pus-o acolo (mama ei)
+- Orice cod bun e reparat de greseala umana vazuta si constientizata, "da in mortii lui un console.log cand nu merge ceva"

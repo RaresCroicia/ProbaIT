@@ -1,16 +1,16 @@
 const app = require("../app")
 const mongoose = require('mongoose');
 
-const port = process.env.PORT || 8080
-const username = process.env.USERNAME;
-const password = process.env.PASSWORD;
-const ip = process.env.IP;
+const path = require('path')
+require('dotenv').config({ path: path.resolve(__dirname, '../.env') })
 
-// Tre sa verific de ce nu face operatiile corect, asa ca nu folosesc inca alea din .env
-mongoose.connect(`mongodb+srv://admin:admin@probait.cgcef5f.mongodb.net/test`, () => {
+const databaseString = 'mongodb+srv://' + process.env.IT_USERNAME + ':' + process.env.IT_PASSWORD +
+'@' + process.env.IT_IP + '/' + process.env.IT_DATABASE + '?retryWrites=true&w=majority';
+
+mongoose.connect(databaseString, () => {
     
     console.log('Connected to the DB!');
-    
+    console.log(databaseString);
     app.listen(port, () => {
         console.log(`Express is listening at http://localhost:${port}`)
     })

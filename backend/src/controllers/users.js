@@ -81,13 +81,10 @@ const loginUser = async (req, res) => {
 
 }
 
-// mai uite-te pe aici, sa faci dracu autorizarea aia si ai scapat de backend
 const authenticateToken = async(req, res, next) => {
-    const authHeader = req.headers['Authorization'];
-    const token = authHeader;
-
+    const token = req.headers["authorization"];
+    
     if(token == null){
-        console.log(token);
         res.status(401).send({message: "The user should be logged in to create a meme!"});
         return;
     }
