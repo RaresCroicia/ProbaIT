@@ -1,4 +1,5 @@
 const Meme = require('../models/meme');
+const jwt_decode = require('jwt-decode');
 
 const listMemes = async (req, res) => {
     try{
@@ -10,8 +11,18 @@ const listMemes = async (req, res) => {
 };
 
 const createMeme = async (req, res) => {
+
+    if(token == null){
+        res.status(401).send({message: "The user should be logged in to create a meme"});
+        return;
+    }
+
+    const decoded = jwt_decode(token);
+    console.log(decoded);
+    
     const meme = new Meme({
-        description: req.body.description
+        description: req.body.description,
+        userId: req.user._id
     });
     
     if(meme.description.length > 2500){

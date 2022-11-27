@@ -81,8 +81,29 @@ const loginUser = async (req, res) => {
 
 }
 
+// mai uite-te pe aici, sa faci dracu autorizarea aia si ai scapat de backend
+const authenticateToken = async(req, res, next) => {
+    const authHeader = req.headers['Authorization'];
+    const token = authHeader;
+
+    if(token == null){
+        console.log(token);
+        res.status(401).send({message: "The user should be logged in to create a meme!"});
+        return;
+    }
+    await jwt.verify(token, process.env.ACCESS_TOKEN_SECRET, async (err, user_id) => {
+        if(err) {
+            res.status(403).send({message: "You can modify only your memes!"});
+            return;
+        }
+        req.user = await User.findOne({_id: user_id}).exec();
+        next();
+    });
+}
+
 module.exports = {
     showUsers: showUsers,
     registerUser: registerUser,
-    loginUser: loginUser
+    loginUser: loginUser,
+    authenticateToken: authenticateToken
 }
