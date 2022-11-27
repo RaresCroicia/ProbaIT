@@ -3,6 +3,7 @@ require('dotenv').config({ path: path.resolve(__dirname, '../.env') })
 
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
+const validator = require('email-validator');
 
 const User = require('../models/user');
 
@@ -18,6 +19,26 @@ const showUsers = async (req, res) => {
 const registerUser = async (req, res) => {
     const { username, password, email } = req.body;
     const duplicateUser = await User.findOne({username}).exec();
+
+    if(!validator.validate(email)){
+        res.status(403).send({message: "Email field should be a valid email!"});
+        return;
+    }
+
+    if(!email.endsWith("@stud.acs.upb.ro")){
+        res.status(403).send({message: "Use the university email!"});
+        return;
+    }
+
+    if(username.length < 8 || username.length > 32){
+        res.status(403).send({message: "Username should be between 8 and 32 characters"});
+        return;
+    }
+
+    if(password.length < 8 || password.length > 32){
+        res.status(403).send({message: "Password should be between 8 and 32 characters"});
+        return;
+    }
 
     if(duplicateUser != null) {
         res.status(409).send({message: 'Username already exists. Try a different one'});

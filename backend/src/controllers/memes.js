@@ -14,9 +14,14 @@ const createMeme = async (req, res) => {
         description: req.body.description
     });
     
+    if(meme.description.length > 2500){
+        res.status(403).send({message: "Description length should be <= 2500 characters"});
+        return
+    }
+
     try{
         await meme.save();
-        res.status(200).send('Meme adaugat!');
+        res.status(200).send({message: 'Meme adaugat!'});
     } catch (err) {
         res.status(500).send({message: err});
     }
@@ -38,7 +43,7 @@ const deleteMeme = async (req, res) => {
 
     try {
         await Meme.deleteOne({_id: id});
-        res.status(200).send(`Quote with id ${id} deleted from database`);
+        res.status(200).send({message: `Quote with id ${id} deleted from database`});
     } catch (err) {
         res.status(500).send({message: err});
     }
@@ -51,7 +56,7 @@ const updateMeme = async (req, res) => {
         if(description){
             await Meme.updateOne({_id: id}, {$set: {description: description}});
         }
-        res.status(200).send(`Meme with id ${id} updated`);
+        res.status(200).send({message: `Meme with id ${id} updated`});
     } catch (err) {
         res.status(500).send({message: err});
     }

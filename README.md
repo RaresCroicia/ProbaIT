@@ -15,7 +15,7 @@
 - [X] DB Schema
 - [X] CRUD Memes
 - [X] Register/Login
-- [ ] Input Validation
+- [X] Input Validation
 - [ ] Protected endpoints
 - [ ] Bonus: File Upload
 
