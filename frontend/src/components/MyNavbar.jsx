@@ -6,12 +6,16 @@ import Container from 'react-bootstrap/Container'
 import NavbarBrand from 'react-bootstrap/esm/NavbarBrand';
 import MEMEIT from '../img/LOGO_MEME_IT.svg'
 
+const fun = () => {
+    console.log("Apasam butoane");
+}
+
 export default function MyNavbar() {
     return (
-        <Navbar className="position-sticky ps-0" expand="lg" variant="dark" fixed="top">
+        <Navbar expand="lg" fixed="top" sticky="top"  variant="light" bg="light">
             <Container>
-                <img src={MEMEIT} alt="da" as={Link} to={"/"}/>
-                
+                <Navbar.Brand> <img src={MEMEIT}/> </Navbar.Brand>
+                <Nav.Link position="right" onClick={fun}> Login </Nav.Link>
             </Container>
         </Navbar>
     )
