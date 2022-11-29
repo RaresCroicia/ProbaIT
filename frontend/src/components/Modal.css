@@ -1,0 +1,13 @@
+h1 {
+    color: #6F3096
+}
+
+.btn-primary{
+    display: flex;
+    align-items: center;
+    background-color: #6F3096;
+}
+
+.btn-primary:hover{
+    background-color: #6F3096
+}

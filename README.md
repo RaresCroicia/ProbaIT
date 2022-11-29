@@ -3,9 +3,9 @@
 ## Tasks done
 
 ### FRONTEND
-- [ ] Navbar
+- [X] Navbar
 - [ ] Landing page
-- [ ] Login/Register
+- [X] Login/Register
 - [ ] Upload Form
 - [ ] Footer
 - [ ] Responsiveness
@@ -80,3 +80,4 @@ npm run backend
 - Eu incercand sa imi dau seama de ce nu merge POST si dupa 20 de minute sa vad ca am scris PATCH in loc de POST in router. Am avut un moment de brainfuck masiv
 - Cand incerci sa folosesti o variabila din .env, asigura-te ca ai si pus-o acolo (mama ei)
 - Orice cod bun e reparat de greseala umana vazuta si constientizata, "da in mortii lui un console.log cand nu merge ceva"
+- Nu e problema daca nu faci butonu de meme it sa te trimita pe pagina principala cat timp ai o singura pagina!
