@@ -18,7 +18,7 @@ export default function MyNavbar() {
     const [modalRegisterShow, setModalRegisterShow] = useState(false);
 
 
-    const butoane = () => {
+    const showButtons = () => {
         if(logat === false){
             return(
                 <ButtonGroup>
@@ -48,7 +48,7 @@ export default function MyNavbar() {
                 </Navbar.Collapse>
                 <Navbar.Collapse id="responsive-navbar-nav"> 
                     <Form className="position-absolute top-5 end-0" >
-                        {butoane()}
+                        {showButtons()}
                     </Form>
                 </Navbar.Collapse>
             </Navbar>

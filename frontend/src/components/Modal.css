@@ -6,8 +6,10 @@ h1 {
     display: flex;
     align-items: center;
     background-color: #6F3096;
+    border-color:#6F3096;
+    outline-color: #6F3096;
 }
 
 .btn-primary:hover{
-    background-color: #6F3096
+    background-color: #3E1F52
 }
