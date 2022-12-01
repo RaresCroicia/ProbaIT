@@ -55,3 +55,18 @@
 .centered {
   align-items: center;
 }
+
+.h1-card {
+  color: #252F65;
+  text-align: left;
+  font-weight: bold;
+  font-family: 'Merriweather';
+  font-style: normal;
+}
+
+.p-card {
+  font-family: 'Roboto';
+  font-style: normal;
+  color: #252F65;
+  text-align: left;
+}
