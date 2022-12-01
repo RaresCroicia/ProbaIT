@@ -35,7 +35,7 @@ function App() {
     <>
       <MyNavbar/>
       <Container>
-      <Row className="align-items-center">
+      <Row>
         <Col>
           <h1 className="h1-main">
             Partajarea de meme-uri nu a fost niciodată mai simplă! 
@@ -51,7 +51,7 @@ function App() {
           <img src={salt_bae}></img>
         </Col>
       </Row>
-      <Row className="align-items-center ">
+      <Row className="align-items-center">
         <Card ref={formMeme}>
           <Card.Body>
             <Container>

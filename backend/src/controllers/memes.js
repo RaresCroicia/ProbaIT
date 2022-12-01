@@ -56,6 +56,12 @@ const updateMeme = async (req, res) => {
     const { id } = req.params;
     try {
         const { description } = req.body;
+        const meme = await Meme.findOne({_id: id});
+        const userIdReq = req.user._id.toString();
+        if(userIdReq !== meme["userId"]){
+            res.status(403).send({message: "You can only modify your own memes!"});
+            return;
+        }
         if(description){
             await Meme.updateOne({_id: id}, {$set: {description: description}});
         }

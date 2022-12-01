@@ -85,12 +85,12 @@ const authenticateToken = async(req, res, next) => {
     const token = req.headers["authorization"];
     
     if(token == null){
-        res.status(401).send({message: "The user should be logged in to create a meme!"});
+        res.status(401).send({message: "You should be authenticated"});
         return;
     }
     await jwt.verify(token, process.env.ACCESS_TOKEN_SECRET, async (err, user_id) => {
         if(err) {
-            res.status(403).send({message: "You can modify only your memes!"});
+            res.status(403).send({message: "Wrong account!"});
             return;
         }
         req.user = await User.findOne({_id: user_id}).exec();
