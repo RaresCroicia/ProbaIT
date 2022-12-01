@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+.h1-main {
+  color: #252F65;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Merriweather';
+  font-style: normal;
+}
+
+.p-main {
+  font-family: 'Roboto';
+  font-style: normal;
+  color: #252F65;
+  text-align: center;
+}
+
+.centered {
+  align-items: center;
+}

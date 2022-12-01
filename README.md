@@ -4,7 +4,7 @@
 
 ### FRONTEND
 - [X] Navbar
-- [ ] Landing page
+- [X] Landing page
 - [X] Login/Register
 - [ ] Upload Form
 - [ ] Footer
@@ -71,6 +71,7 @@ npm run backend
 ## Probleme intampinate + Fixes
 
 ### FRONTEND
+- Deci imi punea chestii in spatele navbar-ului, fiindca aveam fixed top, recomandat sa pun sticky top ca sa imi continue cu restul sub navbar, nu din spatele lui.
 
 ### BACKEND
 - Cand folosesc variabilele din .env pentru a ma conecta la server, nu pot face operatii for some reason, i will look into it

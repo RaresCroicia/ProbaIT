@@ -40,7 +40,7 @@ export default function MyNavbar() {
 
     return (
         <>
-            <Navbar collapseOnSelect expand="sm" fixed="top" variant="light" bg="light" className="mb-3">
+            <Navbar collapseOnSelect expand="sm" sticky="top" variant="light" bg="light" className="mb-3">
                 <Navbar.Brand><img src={MEMEIT}/></Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                 <Navbar.Collapse id="responsive-navbar-nav">
