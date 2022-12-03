@@ -1,21 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+
 import MyNavbar from './components/MyNavbar';
-import {Row, Col, Button, Card, Form, Modal} from 'react-bootstrap';
-import {Container} from 'react-bootstrap';
-import ModalSmecher from './components/ModalLogin';
-import salt_bae from './img/WHY_SO_SALTY.svg';
-import {useState} from 'react'
 import ModalPosted from './components/ModalPosted';
 import ModalWrong from './components/ModalWrong';
-import { useRef } from 'react';
+import Footer from './components/Footer';
+
+import {Row, Col, Button, Card, Form, Modal, Container} from 'react-bootstrap';
+import {useState, useRef} from 'react'
 
 import meme1 from './img/meme1.svg';
 import meme2 from './img/meme2.svg';
 import meme3 from './img/meme3.svg';
-import Footer from './components/Footer';
-
-
+import salt_bae from './img/WHY_SO_SALTY.svg';
 
 function App() {
 

@@ -1,6 +1,4 @@
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
-import {Form} from 'react-bootstrap'
+import {Form, Button, Modal} from 'react-bootstrap'
 import './Modal.css'
 
 function ModalRegister(props) {

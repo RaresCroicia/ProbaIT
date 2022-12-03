@@ -1,15 +1,12 @@
-import Navbar from 'react-bootstrap/Navbar';
-import {Link} from 'react-router-dom';
-import Nav from 'react-bootstrap/Nav';
-import NavLink from 'react-bootstrap/NavLink';
-import Container from 'react-bootstrap/Container'
-import NavbarBrand from 'react-bootstrap/esm/NavbarBrand';
-import MEMEIT from '../img/LOGO_MEME_IT.svg';
-import {ButtonGroup, Button, Form} from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap/dist/css/bootstrap.css';
+
+import {ButtonGroup, Button, Form, Navbar} from 'react-bootstrap';
 import { useState } from 'react';
+
 import ModalLogin from './ModalLogin';
 import ModalRegister from './ModalRegister';
+
+import MEMEIT from '../img/LOGO_MEME_IT.svg';
 
 export default function MyNavbar() {
     

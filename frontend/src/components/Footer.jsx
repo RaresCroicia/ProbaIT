@@ -1,5 +1,5 @@
-import React from 'react';
 import { MDBFooter } from 'mdb-react-ui-kit';
+
 import insta from '../img/insta.svg'
 import twitch from '../img/twitch.svg'
 import facebook from '../img/facebook.svg'
