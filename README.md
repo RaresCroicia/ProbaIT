@@ -135,6 +135,17 @@ npm run backend
 #### FILE UPLOAD (BONUS)
 - Still not done :)))
 
+### FRONTEND && BACKEND LINKED
+
+Totul a fost implementat prin fetch-uri.
+
+#### REGISTER
+- Cand apesi pe butonul de register, se face un POST catre serverul de backend cu datele introduse in campuri.
+- In functie de rezultatul requestului, fie se afiseaza un modal nou cu eroarea data de server, fie adauga contul in DB si il logheaza pe site.
+
+#### LOGIN
+- Cand apesi pe login, face aceeasi chestie ca la register, doar ca doar verifica daca exista contul in DB
+
 ## Probleme intampinate + Fixes
 
 ### FRONTEND
@@ -145,8 +156,13 @@ npm run backend
 - Cand folosesc variabilele din .env pentru a ma conecta la server, nu pot face operatii for some reason, i will look into it
 - [FIX] nu folosi nume clasice din variabilele linux (USERNAME), fa-le cat mai originale si unice (adauga un prefix)
 
+### LINKING
+- Bag pula in el de cors, la request nu mergea si imi futea ceva, a trebuit doar un app.use(cors()).
+- Scuzati limbajul de mai sus :))
+
 ## Funny moments (Orice cod bun e nevoit sa aiba astfel de momente)
 - Eu incercand sa imi dau seama de ce nu merge POST si dupa 20 de minute sa vad ca am scris PATCH in loc de POST in router. Am avut un moment de brainfuck masiv
 - Cand incerci sa folosesti o variabila din .env, asigura-te ca ai si pus-o acolo (mama ei)
 - Orice cod bun e reparat de greseala umana vazuta si constientizata, "da in mortii lui un console.log cand nu merge ceva"
 - Nu e problema daca nu faci butonu de meme it sa te trimita pe pagina principala cat timp ai o singura pagina!
+- Candva vorbeam cu codrut si a zis ca isi baga ceva in el de cors, azi am aflat si de ce, mama lui.
