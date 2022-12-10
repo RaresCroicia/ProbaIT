@@ -44,8 +44,6 @@ function ModalRegister(props) {
                         <Button 
                             onClick={async () => {
 
-                                console.log(username, password, email);
-
                                 await fetch('http://localhost:8080/api/users/register', {
                                     headers: {
                                         'Content-Type': 'application/json',
