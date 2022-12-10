@@ -51,13 +51,13 @@ export default function MyNavbar() {
             </Navbar>
 
             <ModalLogin show={modalLoginShow} onHide={() => setModalLoginShow(false)} 
-                buttonFunction={() => {
+                success={() => {
                     setLogat(true);
                     setModalLoginShow(false);
                 }
             }/>
             <ModalRegister show={modalRegisterShow} onHide={() => setModalRegisterShow(false)} 
-                buttonFunction={() => {
+                success={() => {
                     setLogat(true);
                     setModalRegisterShow(false);
                 }
