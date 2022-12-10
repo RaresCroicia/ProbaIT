@@ -42,16 +42,18 @@ function ModalLogin(props) {
                                 return res.json();
                             else {
                                 const data = await res.json();
-                                console.log(data);
                                 setMessage(data.message);
                                 handleShow(); 
                             }
                         })
                             .then((data) => {
                                 if(data !== undefined){
+                                    localStorage.setItem('AccessToken', data.message)
                                     props.success();
                                 }
                         });
+
+
                     }} bg-color="green">
                         Login
                     </Button>

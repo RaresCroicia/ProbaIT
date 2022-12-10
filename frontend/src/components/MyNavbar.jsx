@@ -27,7 +27,7 @@ export default function MyNavbar() {
         else{
             return(
                 <ButtonGroup>
-                    <Button variant="third" onClick={() => setLogat(false)}> Delogare </Button>
+                    <Button variant="third" onClick={() => {setLogat(false); localStorage.clear();}}> Delogare </Button>
                 </ButtonGroup>
             )
         }

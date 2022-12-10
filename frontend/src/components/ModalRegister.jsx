@@ -42,11 +42,11 @@ function ModalRegister(props) {
 
 
                         <Button 
-                            onClick={() => {
+                            onClick={async () => {
 
                                 console.log(username, password, email);
 
-                                fetch('http://localhost:8080/api/users/register', {
+                                await fetch('http://localhost:8080/api/users/register', {
                                     headers: {
                                         'Content-Type': 'application/json',
                                         'Accept': 'application/json'
@@ -55,12 +55,10 @@ function ModalRegister(props) {
                                     body: JSON.stringify({username: username, password: password, email:email})
                                 }
                                 ).then(async res => {
-                                    console.log(res); 
                                     if(res.status === 200)
                                         return res.json();
                                     else {
                                         const data = await res.json();
-                                        console.log(data);
                                         setMessage(data.message);
                                         handleShow();                                        
                                     }
@@ -71,7 +69,15 @@ function ModalRegister(props) {
                                     }
                                 });
 
-                                //props.success()
+                                await fetch('http://localhost:8080/api/users/login', {
+                                    headers: {
+                                        'Content-Type': 'application/json',
+                                        'Accept': 'application/json'
+                                    },
+                                    method: "POST",
+                                    body: JSON.stringify({username: username, password: password})
+                                }).then(res => res.json())
+                                  .then(data => localStorage.setItem('AccessToken', data.message)) 
                             }}>
                             Register
                         </Button>
