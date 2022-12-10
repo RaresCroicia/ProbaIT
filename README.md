@@ -73,7 +73,7 @@ npm run backend
 - in dreapta avem urmatoarele butoane:
     - fie doua butoane de login si register
     - fie de delogare
-    - am folosit un state pentru a vedea daca e logat sau nu (am fentat putin local storage-ul, daca mai am timp dupa ce termin cu restul temelor, il fac frumos)
+    - am folosit un state pentru a vedea daca e logat sau nu, iar in localStorage am salvat access tokenul.
 
 #### LANDING PAGE
 - [Aplicatia](frontend/src/App.js)
