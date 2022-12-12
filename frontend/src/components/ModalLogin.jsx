@@ -1,6 +1,7 @@
 import {Form, Button, Modal} from 'react-bootstrap'
 import { useState } from 'react';
 import './Modal.css'
+import MEMEIT from '../img/LOGO_MEME_IT.svg';
 
 function ModalLogin(props) {
 
@@ -13,7 +14,7 @@ function ModalLogin(props) {
 
   return (
     <Modal {...props} size="md" aria-labelledby="contained-modal-title-vcenter" centered>
-        <Modal.Header closeButton></Modal.Header>
+        <Modal.Header closeButton><img src={MEMEIT}/></Modal.Header>
         <Modal.Body>
             <>
                 <h1 className="text-center">

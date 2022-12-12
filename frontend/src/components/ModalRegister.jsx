@@ -3,6 +3,8 @@ import { useState } from 'react';
 import {Form, Button, Modal} from 'react-bootstrap';
 import './Modal.css'
 
+import MEMEIT from '../img/LOGO_MEME_IT.svg';
+
 function ModalRegister(props) {
 
     const [username, setUsername] = useState('');
@@ -15,7 +17,7 @@ function ModalRegister(props) {
 
     return (
         <Modal {...props} size="md" aria-labelledby="contained-modal-title-vcenter" centered>
-            <Modal.Header closeButton></Modal.Header>
+            <Modal.Header closeButton><img src={MEMEIT}/></Modal.Header>
             <Modal.Body>
                 <>
                     <h1 className="text-center">
