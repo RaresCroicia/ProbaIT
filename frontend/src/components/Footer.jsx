@@ -10,13 +10,13 @@ export default function Footer() {
 
       <div className='text-center p-3 text-light' style={{ backgroundColor: 'rgba(6, 17, 79, 1)' }}>
       <div>
-        <a href="https://www.instagram.com/lsacbucuresti/">
+        <a className="mx-2" href="https://www.instagram.com/lsacbucuresti/">
             <img margin="auto" src={insta}></img>
         </a>
-        <a href="https://www.twitch.tv/lsac_bucuresti">
+        <a className="mx-2" href="https://www.twitch.tv/lsac_bucuresti">
         <img margin="auto" src={twitch}></img>
         </a>
-        <a href="https://www.facebook.com/LsacBucuresti/">
+        <a className="mx-2" href="https://www.facebook.com/LsacBucuresti/">
         <img margin="auto" src={facebook}></img>
         </a>
 

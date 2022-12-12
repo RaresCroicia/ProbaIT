@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const ObjectId = mongoose.Schema.Types.ObjectId;
 
 const memeSchema = mongoose.Schema({
     // Ca la user, povestea cu ID
@@ -7,7 +8,7 @@ const memeSchema = mongoose.Schema({
         required: true
     },
     userId: {
-        type: String,
+        type: ObjectId,
         required: true
     }
 });

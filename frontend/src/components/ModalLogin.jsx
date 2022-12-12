@@ -56,7 +56,7 @@ function ModalLogin(props) {
 
 
                     }} bg-color="green">
-                        Login
+                        Logare
                     </Button>
                     <Modal show={showModal} onHide={handleClose}>
                         <Modal.Header closeButton>

@@ -31,7 +31,7 @@ function App() {
     <>
       <MyNavbar/>
 
-      <Container className="d-flex justify-content-center">
+      <Container className="d-flex justify-content-center" style={{height: "100vh", width: "250vh"}}>
       <Row md={2} xs={1} className="justify-content-center align-items-center">
         <Col className="mb-5" md={6}>
           <h1 className="h1-main">
@@ -50,12 +50,12 @@ function App() {
       </Row>
       </Container>
 
-      <Container ref={formMeme}>
-      <Row className="align-items-center">
-        <Card>
+      <Container ref={formMeme} className="d-flex justify-content-center mb-5" style={{background: "#6F3096", height: "100vh", width: "150vh"}} >
+      <Row className="align-items-center justify-content-center">
+        <Card style={{height: "60%", width: "100%"}}>
           <Card.Body>
-            <Container>
-              <Row className="align-items-center">
+            <Container className="d-flex justify-content-center mb-5">
+              <Row md={2} xs={1} className="align-items-center">
                 <Col className="text-center">
                   <h1 className="h1-card">
                   Ai tupeu și crezi că ești amuzant?

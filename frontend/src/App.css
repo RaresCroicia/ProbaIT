@@ -69,13 +69,14 @@
 }
 
 .container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+    max-width: 100%;
+    max-height: 100%;
     margin-right: 90%;
     margin-left: 90%;
     align-items: center;
+    justify-content: center;
 }
+
 
 
 .h1-card {

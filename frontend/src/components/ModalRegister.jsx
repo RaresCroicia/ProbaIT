@@ -67,7 +67,7 @@ function ModalRegister(props) {
                                     }
                                 });
                             }}>
-                            Register
+                            Creare Cont
                         </Button>
                         <Modal show={showModal} onHide={handleClose}>
                             <Modal.Header closeButton>
