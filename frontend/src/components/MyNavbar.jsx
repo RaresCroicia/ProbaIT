@@ -58,7 +58,6 @@ export default function MyNavbar() {
             }/>
             <ModalRegister show={modalRegisterShow} onHide={() => setModalRegisterShow(false)} 
                 success={() => {
-                    setLogat(true);
                     setModalRegisterShow(false);
                 }
             }/>
