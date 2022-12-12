@@ -1,9 +1,9 @@
 import React from 'react';
 import { useState } from 'react';
 import {Form, Button, Modal} from 'react-bootstrap';
-import axios from 'axios'
-import ReactDOM from 'react-dom/client';
 import './Modal.css'
+
+import MEMEIT from '../img/LOGO_MEME_IT.svg';
 
 function ModalRegister(props) {
 
@@ -17,7 +17,7 @@ function ModalRegister(props) {
 
     return (
         <Modal {...props} size="md" aria-labelledby="contained-modal-title-vcenter" centered>
-            <Modal.Header closeButton></Modal.Header>
+            <Modal.Header closeButton><img src={MEMEIT}/></Modal.Header>
             <Modal.Body>
                 <>
                     <h1 className="text-center">
@@ -66,16 +66,6 @@ function ModalRegister(props) {
                                         props.success();
                                     }
                                 });
-
-                                await fetch('http://localhost:8080/api/users/login', {
-                                    headers: {
-                                        'Content-Type': 'application/json',
-                                        'Accept': 'application/json'
-                                    },
-                                    method: "POST",
-                                    body: JSON.stringify({username: username, password: password})
-                                }).then(res => res.json())
-                                  .then(data => localStorage.setItem('AccessToken', data.message)) 
                             }}>
                             Register
                         </Button>

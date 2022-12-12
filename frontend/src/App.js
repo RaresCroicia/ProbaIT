@@ -5,7 +5,7 @@ import ModalPosted from './components/ModalPosted';
 import ModalWrong from './components/ModalWrong';
 import Footer from './components/Footer';
 
-import {Row, Col, Button, Card, Form, Modal, Container} from 'react-bootstrap';
+import {Row, Col, Button, Card, Form, Modal, Container, Image} from 'react-bootstrap';
 import {useState, useRef} from 'react'
 
 import meme1 from './img/meme1.svg';
@@ -30,9 +30,10 @@ function App() {
   return (
     <>
       <MyNavbar/>
-      <Container>
-      <Row>
-        <Col>
+
+      <Container className="d-flex justify-content-center">
+      <Row md={2} xs={1} className="justify-content-center align-items-center">
+        <Col className="mb-5" md={6}>
           <h1 className="h1-main">
             Partajarea de meme-uri nu a fost niciodată mai simplă! 
           </h1>
@@ -43,16 +44,19 @@ function App() {
             Upload a MEME
           </Button>
         </Col>
-        <Col>
-          <img src={salt_bae}></img>
+        <Col className="mb-5" md={6}>
+          <img className="img-fluid" src={salt_bae}></img>
         </Col>
       </Row>
+      </Container>
+
+      <Container ref={formMeme}>
       <Row className="align-items-center">
-        <Card ref={formMeme}>
+        <Card>
           <Card.Body>
             <Container>
-              <Row>
-                <Col>
+              <Row className="align-items-center">
+                <Col className="text-center">
                   <h1 className="h1-card">
                   Ai tupeu și crezi că ești amuzant?
                   </h1>
@@ -93,22 +97,23 @@ function App() {
           </Card.Body>
         </Card>
       </Row>
-
+      </Container>
+      <Container>
       <Row>
         <h1 className="h1-card">
           Most viewed
         </h1>
       </Row>
 
-      <Row>
-        <Col>
-          <img src={meme2}/>
+      <Row xs={1} md={3}>
+        <Col className="mb-5">
+          <img className="img-fluid" src={meme2}/>
         </Col>
-        <Col>
-          <img src={meme1}/>
+        <Col className="mb-5">
+          <img className="img-fluid" src={meme1}/>
         </Col>
-        <Col>
-          <img src={meme3}/>
+        <Col className="mb-5">
+          <img className="img-fluid" src={meme3}/>
         </Col>
       </Row>
 
