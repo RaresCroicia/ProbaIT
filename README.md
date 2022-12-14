@@ -141,16 +141,17 @@ Totul a fost implementat prin fetch-uri.
 
 #### REGISTER
 - Cand apesi pe butonul de register, se face un POST catre serverul de backend cu datele introduse in campuri.
-- In functie de rezultatul requestului, fie se afiseaza un modal nou cu eroarea data de server, fie adauga contul in DB si il logheaza pe site.
+- In functie de rezultatul requestului, fie se afiseaza un modal nou cu eroarea data de server, fie adauga contul in DB.
 
 #### LOGIN
-- Cand apesi pe login, face aceeasi chestie ca la register, doar ca doar verifica daca exista contul in DB
+- Cand apesi pe login, in functie de rezultatul requestului, fie te logheaza, fie se afiseaza cu eroarea data de server
 
 ## Probleme intampinate + Fixes
 
 ### FRONTEND
 - Deci imi punea chestii in spatele navbar-ului, fiindca aveam fixed top, recomandat sa pun sticky top ca sa imi continue cu restul sub navbar, nu din spatele lui.
 - Cand folosesc bootstrap, ar trebui sa pun si css-ul, altfel ramane default-ul
+- Position relative, ca sa centrez butonul cum trebuie, trebuia doar pus .... **bate tobele** .... translate-middle
 
 ### BACKEND
 - Cand folosesc variabilele din .env pentru a ma conecta la server, nu pot face operatii for some reason, i will look into it
