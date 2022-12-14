@@ -1,5 +1,7 @@
 import './App.css';
 
+import 'typeface-merriweather';
+
 import MyNavbar from './components/MyNavbar';
 import ModalPosted from './components/ModalPosted';
 import ModalWrong from './components/ModalWrong';
@@ -31,16 +33,16 @@ function App() {
     <>
       <MyNavbar/>
 
-      <Container className="d-flex justify-content-center" style={{height: "100vh", width: "250vh"}}>
-      <Row md={2} xs={1} className="justify-content-center align-items-center">
+      <Container className="d-flex justify-content-center" style={{height: "90vh", width: "100vw", padding: "5%"}}>
+      <Row md={2} xs={1} className="align-items-center">
         <Col className="mb-5" md={6}>
-          <h1 className="h1-main">
+          <h1 className="h1-main mb-3">
             Partajarea de meme-uri nu a fost niciodată mai simplă! 
           </h1>
-          <p className="p-main">
+          <p className="p-main mb-5">
             Platforma ideală pentru studenții de la Politehnică, amuzați de câte materii o să pice semestrul asta.
           </p>
-          <Button onClick={() => scrollToSection(formMeme)} variant="primary">
+          <Button className="position-relative start-50 translate-middle" onClick={() => scrollToSection(formMeme)} variant="primary">
             Upload a MEME
           </Button>
         </Col>
@@ -50,7 +52,7 @@ function App() {
       </Row>
       </Container>
 
-      <Container ref={formMeme} className="d-flex justify-content-center mb-5" style={{background: "#6F3096", height: "100vh", width: "150vh"}} >
+      <Container ref={formMeme} className="d-flex justify-content-center mb-5" style={{background: "#6F3096", height: "100vh", width: "100vw", padding: "5%"}} >
       <Row className="align-items-center justify-content-center">
         <Card style={{height: "60%", width: "100%"}}>
           <Card.Body>
@@ -100,7 +102,7 @@ function App() {
       </Container>
       <Container>
       <Row>
-        <h1 className="h1-card">
+        <h1 className="h1-card mb-5">
           Most viewed
         </h1>
       </Row>

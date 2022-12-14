@@ -56,25 +56,15 @@
   align-items: center;
 }
 
-@media (min-width: 768px){
-.container {
-    max-width: 720px;
-}
-}
-
-@media (min-width: 576px){
-.container {
-    max-width: 540px;
-} 
-}
 
 .container {
     max-width: 100%;
     max-height: 100%;
-    margin-right: 90%;
-    margin-left: 90%;
+    margin-right: 100%;
+    margin-left: 100%;
     align-items: center;
     justify-content: center;
+    border: "2px solid #000000";
 }
 
 

@@ -17,7 +17,7 @@ function ModalLogin(props) {
         <Modal.Header closeButton><img src={MEMEIT}/></Modal.Header>
         <Modal.Body>
             <>
-                <h1 className="text-center">
+                <h1 className="text-center" style={{fontFamily: "Merriweather"}}>
                     Welcome back
                 </h1>
                 <Form>
