@@ -8,8 +8,7 @@
 - [X] Login/Register
 - [X] Upload Form
 - [X] Footer
-- [X] Responsiveness (aproximativ, inca mai are probleme la unele chestii din cauza meme-ului cu salt bae)
-
+- [X] Responsiveness 
 ### BACKEND
 
 - [X] DB Schema
@@ -39,6 +38,8 @@ cd ../backend && npm install # Asteptam
 ```
 
 Pas #4: Se porneste proiectul
+
+- Trebuie sa fim in directorul ProbaIT
 - Pentru a porni si backend-ul si frontend-ul, in the same time, folosim
 ```bash
 npm run dev
@@ -99,7 +100,8 @@ npm run backend
 - nimic special, pe fiecare poza e pus link-ul respectiv.
 
 #### RESPONSIVENESS
-- La un moment dat, cum scade rezolutia, incepe sa crape din responsiveness, meme-ul cu salt-bae trece de dimensiunea ecranului, nu am stiut a rezolva, am lasat asa.
+- Aplicatia poate rula si pe 99% din telefoane, insa 100% din telefoanele noi folosite, fara sa arate rau.
+- Am folosit foarte mult xs si md din bootstrap pentru dimensiuni.
 
 ### BACKEND
 
@@ -133,11 +135,11 @@ npm run backend
 - Pentru PATCH: dupa ce am trecut de verificarea token-ului, verificam si daca user-ul autentificat este cel care a creat meme-ul inainte de a-l modifica
 
 #### FILE UPLOAD (BONUS)
-- Still not done :)))
+- Not done :(, temele la SO si-au spus cuvantul
 
 ### FRONTEND && BACKEND LINKED
 
-Totul a fost implementat prin fetch-uri.
+- Totul a fost implementat prin fetch-uri.
 
 #### REGISTER
 - Cand apesi pe butonul de register, se face un POST catre serverul de backend cu datele introduse in campuri.
@@ -152,6 +154,7 @@ Totul a fost implementat prin fetch-uri.
 - Deci imi punea chestii in spatele navbar-ului, fiindca aveam fixed top, recomandat sa pun sticky top ca sa imi continue cu restul sub navbar, nu din spatele lui.
 - Cand folosesc bootstrap, ar trebui sa pun si css-ul, altfel ramane default-ul
 - Position relative, ca sa centrez butonul cum trebuie, trebuia doar pus .... **bate tobele** .... translate-middle
+- Responsive-ul trebuie avut grija dupa fiecare componenta, nu la final, ca sa nu te chinui ca dementul sa vezi de unde nu merge
 
 ### BACKEND
 - Cand folosesc variabilele din .env pentru a ma conecta la server, nu pot face operatii for some reason, i will look into it
@@ -167,3 +170,4 @@ Totul a fost implementat prin fetch-uri.
 - Orice cod bun e reparat de greseala umana vazuta si constientizata, "da in mortii lui un console.log cand nu merge ceva"
 - Nu e problema daca nu faci butonu de meme it sa te trimita pe pagina principala cat timp ai o singura pagina!
 - Candva vorbeam cu codrut si a zis ca isi baga ceva in el de cors, azi am aflat si de ce, mama lui.
+- Momentele cu Robert de pe Whatsapp cand reusea sa imi gaseasca detalii care trebuie modificate, cate injuraturi ti-ai luat Roberte :)))
