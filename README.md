@@ -87,7 +87,7 @@ npm run backend
 - Ele initial sunt ascunse si folosind state-uri ele devin vizibile cand e apasat butonul respectiv
 
 #### UPLOAD FORM
-- [Form](frontend/src/App.js#L68-L93)
+- [Form](frontend/src/App.js#L70-L95)
 - Cand vrei sa uploadezi folosind butonul, te va lasa sa selectezi doar fisiere de tipul acceptat (png, jpg, jpeg, gif)
 - Daca dai drag and drop, poti pune ce fisier vrei tu, insa cand apesi butonul de submit, este o verificare care verifica daca fisierul pus e de tipul acceptat.
 - In functie de ce fisier ai bagat, poti avea urmatoarele modale dupa submit:
