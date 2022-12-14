@@ -33,7 +33,7 @@ function App() {
     <>
       <MyNavbar/>
 
-      <Container className="d-flex justify-content-center" style={{height: "90vh", width: "100vw", padding: "5%"}}>
+      <Container className="d-flex justify-content-center" style={{padding: "0%"}}>
       <Row md={2} xs={1} className="align-items-center">
         <Col className="mb-5" md={6}>
           <h1 className="h1-main mb-3">
@@ -52,7 +52,7 @@ function App() {
       </Row>
       </Container>
 
-      <Container ref={formMeme} className="d-flex justify-content-center mb-5" style={{background: "#6F3096", height: "100vh", width: "100vw", padding: "5%"}} >
+      <Container ref={formMeme} className="d-flex justify-content-center mb-5" style={{background: "#6F3096", padding: "5%"}} >
       <Row className="align-items-center justify-content-center">
         <Card style={{height: "60%", width: "100%"}}>
           <Card.Body>
